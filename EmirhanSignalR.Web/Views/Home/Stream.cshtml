@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Stream";
+}
+
+@section Scripts{
+    <script src="~/js/signalR-client-stream.js"></script>
+}
+<input class="form-control" id="txt_stream" type="text" value="ahmet;mehmet;hasan;emre;veli" />
+
+<button id="btn_fromClient_toHub" class="btn btn-primary my-2">Data Gönder (By Chunk)</button>
+
+
+<button id="btn_fromClient_toHub2" class="btn btn-primary my-2">Product Gönder (By Chunk)</button>
+
+<button id="btn_FromHubToClient" class="btn btn-primary my-2">Hub'dan Stream olarak data al  (By Chunk)</button>
+
+
+
+<div id="streamBox" class="alert alert-info">
+
+</div>
+
+

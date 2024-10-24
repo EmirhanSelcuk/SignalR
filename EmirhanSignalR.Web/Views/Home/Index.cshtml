@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section Scripts
+{
+    <script src="~/js/signalr-client.js"></script>
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+
+
+          <div id="connectionId" class="alert alert-primary" role="alert"></div>
+
+           <button type="button" class="btn btn-success disabled mx-1 my-1">
+               Connected Client Count <span id="span-connected-client-count" class="badge text-bg-secondary"></span>
+           </button>
+            <button class="btn btn-primary mx-1 my-1" id="btn-send-message-all-client">Tüm Client'lara gönder</button>
+
+
+            <button class="btn btn-primary mx-1 my-1" id="btn-send-typed-message-all-client">Tüm Client'lara gönder(complex type)</button>
+
+
+            <button class="btn btn-primary mx-1 my-1" id="btn-send-message-caller-client">İstek yapan client'a gönder </button>
+
+
+            <button class="btn btn-primary mx-1 my-1" id="btn-send-message-others-client">Diğer client'a gönder </button>
+
+            <div>
+                <hr />
+              <input type="text" class="form-control mx-1 my-1" id="text-connectionId" placeholder="connection Id" />
+                <button class="btn btn-primary mx-1 my-1" id="btn-send-message-individual-client">Spesifik client'a gönder </button>
+
+            </div>
+
+            <div>
+                <hr />
+                <div id="groupList" class="alert alert-warning" role="alert"></div>
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupA-add">A Grubuna katıl </button>
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupA-remove">A Grubundan çık </button>
+
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupB-add">B Grubuna Eklendiniz </button>
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupB-remove">B Grubundan çık </button>
+
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupA-send-message">A grubuna mesaj gönder </button>
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupB-send-message">B grubuna mesaj gönder </button>
+
+
+
+
+            </div>
+            
+           
+
+
+
+        </div>
+    </div>
+</div>
